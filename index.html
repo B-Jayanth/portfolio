@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background-color: #0078d7;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+      }
+
+      nav ul li a:hover {
+        background-color: #0078d7;
+        transition: background-color 0.3s;
+      }
+
+      section {
+        padding: 20px;
+        margin: 20px;
+        background-color: white;
+        border-radius: 8px;
+      }
+
+      .education-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 120px;
+      }
+
+      .education {
+        background-color: #eef;
+        border-radius: 8px;
+        padding: 10px;
+        width: calc(
+          50% - 10px
+        ); /* adjust the width to fit two images side by side */
+        max-width: 300px;
+      }
+
+      .education-image {
+        width: 100%;
+        height: 150px; /* adjust the height to fit your image size */
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      h1,
+      h2 {
+        color: #0078d7;
+      }
+
+      .gallery img {
+        width: 150px;
+        height: auto;
+        margin: 10px;
+        border-radius: 8px;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f7f7f7;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+      }
+
+      textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+      }
+
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #444;
+      }
+table {
+  border-collapse: separate;
+  border-spacing: 50px; /* add 20px space between table columns */
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+     <section id="home">
+  <table>
+    <tr>
+<td align="right">
+        <img src="mine.jpg" alt="profile image" class="profile-image" />
+      </td>
+ 
+      <td>
+        <h2>Welcome to My Portfolio Website</h2>
+        <h3>Student</h3>
+        <h1>Hii, Iam Jayanth</h1>
+        <h3>From Andhra Pradesh,India</h3>
+      </td>
+
+         </tr>
+  </table>
+</section>
+
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-container">
+        <div class="education">
+          <p>Pursuring my B.Tech in Vignan University</p>
+          <img src="btechh.jpg" alt="btech image" class="education-image" />
+        </div>
+        <div class="education">
+          <p>Completed my inter in Sri Chaitanya Junior college.</p>
+          <img src="interr.jpg" alt="btech image" class="education-image" />
+        </div>
+        <div class="education">
+          <p>My schooling was in Kennedy School</p>
+          <img src="school.jpg" alt="btech image" class="education-image" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+     
+
+
+<p>I'm <b>Jayanth</b>, a third-year B.Tech student specializing in Information Technology. I have a strong passion for technology and a keen interest in software development and web design and I enjoy working on projects that challenge my creativity and problem-solving abilities and I have worked on several projects showcasing my abilities in web development using HTML, CSS,  as well as databases like MySQL. I am eager to explore opportunities in software development and contribute to innovative projects, with the goal of working with a dynamic team where I can continue to learn and grow in the tech industry.</p>
+
+<h1> Skills </h1>
+<p>
+<li>
+C</li>
+<li>Java</li>
+<li>Python</li>
+<li>HTML</li</p>
+
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br /><br />
+        <input type="submit" value="Send" />
+      </form>
+    </section>
+  </body>
+</html>
